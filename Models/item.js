@@ -6,7 +6,7 @@ const itemSchema = new Schema({
     status: Boolean,
     quantity: Number,
     recommended: Number,
-)
+})
 
 const Item = mongoose.model('Item', itemSchema)
 module.exports = Item;
