@@ -35,7 +35,23 @@ checklist.put('/increase/:id',(req,res) => {
          if (error){
             res.json({'error':error})
          } else {
-            res.json(updatedItem)
+            //enable (check) item if quantity more than 0
+            if(updatedItem.quantity>0){
+               Item.findByIdAndUpdate(
+                  req.params.id,
+                  {status:true},
+                  {new:true},
+                  (error, updatedItem) =>{
+                     if (error){
+                        res.json({'error':error})
+                     } else {
+                        res.json(updatedItem)
+                     }
+                  }
+               )
+            } else {
+               res.json(updatedItem)
+            }
          }
       }
    )
@@ -51,13 +67,42 @@ checklist.put('/decrease/:id',(req,res) => {
          if (error){
             res.json({'error':error})
          } else {
-            res.json(updatedItem)
+            //disable (uncheck) item if quantity reduced to 0 or less
+            if(updatedItem.quantity<=0){
+               Item.findByIdAndUpdate(
+                  req.params.id,
+                  {status:false},
+                  {new:true},
+                  (error, updatedItem) =>{
+                     if (error){
+                        res.json({'error':error})
+                     } else {
+                        res.json(updatedItem)
+                     }
+                  }
+               )
+            } else {
+               res.json(updatedItem)
+            }
          }
       }
    )
 })
 
 //==========Change Status======================
+
+//Disable all
+checklist.put('/uncheck-all/',(req,res)=>{
+   Item.updateMany(
+      {},
+      {status:false},
+      {multi:true},
+      (error, response)=>{
+         res.json(response)
+      }
+   )
+})
+
 //Enable
 checklist.put('/enable/:id',(req,res) => {
    Item.findByIdAndUpdate(
