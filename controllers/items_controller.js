@@ -16,7 +16,12 @@ const items = require('../models/seed.js')
 //================SHOW ALL=======================
 checklist.get('/', (req, res) => {
    Item.find({}, (error, data) => {
-      res.json(data)
+      if(error){
+         res.json(error);
+         console.log(error);
+      } else {
+         res.json(data)
+      }
    })
 })
 
