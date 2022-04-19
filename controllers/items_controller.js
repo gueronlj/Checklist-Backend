@@ -95,7 +95,7 @@ checklist.put('/decrease/:id',(req,res) => {
 checklist.put('/uncheck-all/',(req,res)=>{
    Item.updateMany(
       {},
-      {status:false},
+      {status:false, quantity: 0},
       {multi:true},
       (error, response)=>{
          res.json(response)
