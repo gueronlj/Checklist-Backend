@@ -4,5 +4,5 @@
     "name": "Checklist-Backend",
     "location": "US-VA",
     "deployment_model": "GLOBAL",
-    "environment": "development"
+    "environment": "production"
 }
