@@ -1,7 +1,7 @@
 const express = require('express')
 const checklist = express.Router()
-const Item = require('../models/item.js')
-const items = require('../models/seed.js')
+const Item = require('../Models/item.js')
+const items = require('../Models/seed.js')
 
 //--------------Seed---------------------------------
 // checklist.get('/seed', (req, res) => {
