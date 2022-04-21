@@ -1,8 +1,0 @@
-{
-    "app_id": "checklist-backend-oecmp",
-    "config_version": 20210101,
-    "name": "Checklist-Backend",
-    "location": "US-VA",
-    "deployment_model": "GLOBAL",
-    "environment": "production"
-}
