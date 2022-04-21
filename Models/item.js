@@ -6,6 +6,7 @@ const itemSchema = new Schema({
     status: Boolean,
     quantity: Number,
     recommended: Number,
+    category: String,
 })
 
 const Item = mongoose.model('Item', itemSchema)

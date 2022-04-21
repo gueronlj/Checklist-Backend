@@ -3,294 +3,350 @@ module.exports = [
       name: 'Chicken',
       status: false,
       quantity: 0,
-      recommended: 3
+      recommended: 3,
+      category: 'Protein'
    },
    {
       name: 'Brisket',
       status: false,
       quantity: 0,
-      recommended: 4
+      recommended: 4,
+      category: 'Protein',
    },
    {
       name: 'Lettuce',
       status: false,
       quantity: 0,
-      recommended: 7
+      recommended: 7,
+      category: 'Veggie',
    },
    {
       name: 'Jalapenos',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Veggie',
    },
    {
       name: 'Cucumber',
       status: false,
       quantity: 0,
-      recommended: 5
+      recommended: 5,
+      category: 'Veggie',
    },
    {
       name: 'White Onions',
       status: false,
       quantity: 0,
-      recommended: 4
+      recommended: 4,
+      category: 'Veggie',
    },
    {
       name: 'Purple Cabbage',
       status: false,
       quantity: 0,
-      recommended: 3
+      recommended: 3,
+      category: 'Veggie',
    },
    {
       name: 'Cilantro',
       status: false,
       quantity: 0,
-      recommended: 3
+      recommended: 3,
+      category: 'Veggie',
    },
    {
       name: 'Green Onions',
       status: false,
       quantity: 0,
-      recommended: 3
+      recommended: 3,
+      category: 'Veggie',
    },
    {
       name: 'Shrimps',
       status: false,
       quantity: 0,
-      recommended: 4
+      recommended: 4,
+      category: 'Frozen',
    },
    {
       name: 'Seasoning Mix',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Misc.',
    },
    {
       name: 'Raddish and Carrot',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Veggie',
    },
    {
       name: 'Appetizer Cabbage',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Veggie',
    },
    {
       name: 'Mushrooms',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Veggie',
    },
    {
       name: 'Egg Rolls',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Frozen',
    },
    {
       name: 'Shumai',
       status: false,
       quantity: 0,
-      recommended: 4
+      recommended: 4,
+      category: 'Frozen',
    },
    {
       name: 'Gyoza',
       status: false,
       quantity: 0,
-      recommended: 4
+      recommended: 4,
+      category: 'Frozen',
    },
    {
       name: 'Pho Garnish',
       status: false,
       quantity: 0,
-      recommended: 20
+      recommended: 20,
+      category: 'Misc.',
    },
    {
       name: 'Taco Bread',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Misc.',
+   },
+   {
+      name: 'Loco-Loco Bread',
+      status: false,
+      quantity: 0,
+      recommended: 4,
+      category: 'Misc.',
    },
    {
       name: 'Soda',
       status: false,
       quantity: 0,
-      recommended: 10
+      recommended: 10,
+      category: 'Misc.',
    },
    {
       name: 'Water',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Butter',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Pho Noodle',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Misc.',
    },
    {
       name: 'Tofu',
       status: false,
       quantity: 0,
-      recommended: 8
+      recommended: 8,
+      category: 'Protein',
    },
    {
       name: 'Pho Broth',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
-      name: 'Yum-um Sauce',
+      name: 'Yum-yum Sauce',
       status: false,
       quantity: 0,
-      recommended: 5
+      recommended: 5,
+      category: 'Misc.',
    },
    {
       name: 'Printing Paper',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Thank-you Bag',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Pho Bowls/Lids',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Container',
    },
    {
       name: 'Taco Container',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Container',
    },
    {
       name: 'Hoisin/Sriracha',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Sweet Chili Sauce',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Misc.',
    },
    {
       name: 'Unbelievable Bowls/Lids',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Container',
    },
    {
       name: 'Appetizer Container',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Container',
    },
    {
       name: 'Fries Container/Paper',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Container',
    },
    {
       name: 'Propane',
       status: false,
       quantity: 0,
-      recommended: 3
+      recommended: 3,
+      category: 'Misc.',
    },
    {
       name: 'Terriyaki Sauce',
       status: false,
       quantity: 0,
-      recommended: 2
+      recommended: 2,
+      category: 'Misc.',
    },
    {
       name: 'Oil',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Water Galon Jug',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Utensils for Cooking',
       status: false,
       quantity: 0,
-      recommended: 4
+      recommended: 4,
+      category: 'Misc.',
    },
    {
       name: 'Pho Pots/Steamer',
       status: false,
       quantity: 0,
-      recommended: 4
+      recommended: 4,
+      category: 'Misc.',
    },
    {
       name: 'Fryer Baskets',
       status: false,
       quantity: 0,
-      recommended: 4
+      recommended: 4,
+      category: 'Misc.',
    },
    {
       name: 'Fries',
       status: false,
       quantity: 0,
-      recommended: 7
+      recommended: 7,
+      category: 'Frozen',
    },
    {
       name: 'Tots',
       status: false,
       quantity: 0,
-      recommended: 7
+      recommended: 7,
+      category: 'Frozen',
    },
    {
       name: 'Tenders',
       status: false,
       quantity: 0,
-      recommended: 6
+      recommended: 6,
+      category: 'Frozen',
    },
    {
       name: 'Parmesan',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Cajun Seasoning',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Gloves',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
    {
       name: 'Plastic Utensils',
       status: false,
       quantity: 0,
-      recommended: 1
+      recommended: 1,
+      category: 'Misc.',
    },
 ]
