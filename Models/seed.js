@@ -67,7 +67,7 @@ module.exports = [
       status: false,
       quantity: 0,
       recommended: 4,
-      category: 'Frozen',
+      category: 'Protein',
    },
    {
       name: 'Seasoning Mix',
@@ -348,5 +348,12 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+   },
+   {
+      name: 'Meatballs',
+      status: false,
+      quantity: 0,
+      recommended: 1,
+      category: 'Protein',
    },
 ]

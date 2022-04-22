@@ -4,18 +4,18 @@ const Item = require('../Models/item.js')
 const items = require('../Models/seed.js')
 
 //--------------Seed---------------------------------
-checklist.get('/seed', (req, res) => {
-   Item.create(
-      items, (error, seed) => {
-         console.log(seed);
-         res.json(seed)
-      }
-   )
-})
+// checklist.get('/seed', (req, res) => {
+//    Item.create(
+//       items, (error, seed) => {
+//          console.log(seed);
+//          res.json(seed)
+//       }
+//    )
+// })
 
 //================SHOW ALL=======================
 checklist.get('/', (req, res) => {
-   Item.find({}, (error, data) => {
+   Item.find({}).sort({category:-1, name: 1}).exec((error, data) => {
       if(error){
          res.json(error);
          console.log(error);
