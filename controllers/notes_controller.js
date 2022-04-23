@@ -12,7 +12,7 @@ notes.post('/new', (req,res)=>{
 
 //--------------Read
 notes.get('/', (req, res)=>{
-   Note.find({}).sort({createdAt: 'desc'}).exec((error, data)=>{
+   Note.find({}).sort({createdAt: 1}).exec((error, data)=>{
       if(error){
          res.json(error);
          console.log(error);
