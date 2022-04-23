@@ -26,3 +26,5 @@ notes.get('/', (req, res)=>{
 
 
 //-------------Delete
+
+module.exports = notes

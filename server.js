@@ -18,6 +18,9 @@ app.use(cors())
 const itemsController = require('./controllers/items_controller.js')
 app.use('/checklist', itemsController)
 
+const notesController = require('./controllers/notes_controller.js')
+app.use('/notes', notesController)
+
 //CONNECTIONS
 mongoose.connect(MONGODB_URI)
 db.on('error', (error) => console.log(error.message + ' is Mongod not running?'));
