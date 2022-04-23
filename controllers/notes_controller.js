@@ -22,9 +22,36 @@ notes.get('/', (req, res)=>{
    })
 })
 
-//-------------Update
-
+//-------------Update Note
+notes.put('/:id', (req, res) => {
+    Note.findByIdAndUpdate(
+        req.params.id,
+        req.body,
+        {new:true},
+        (error, updated) => {
+            if(error){
+               res.json(error)
+               console.log(error);
+            }else{
+               res.json(updated)
+            }
+        }
+    )
+})
 
 //-------------Delete
+notes.delete('/:id',(req,res)=>{
+   Note.findByIdAndRemove(
+      req.params.id,
+      (error, deleted)=> {
+         if(error){
+            res.json(error);
+            console.log(error);
+         }else{
+            res.json(deleted)
+         }
+      }
+   )
+})
 
 module.exports = notes
