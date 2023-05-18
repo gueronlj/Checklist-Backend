@@ -7,6 +7,8 @@ const itemSchema = new Schema({
     quantity: Number,
     recommended: Number,
     category: String,
+    tags: Array,
+    unitCost: Number
 })
 
 const Item = mongoose.model('Item', itemSchema)

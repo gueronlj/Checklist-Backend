@@ -2,8 +2,10 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const noteSchema = new Schema({
+    author:String,
     message: String,
-    editing: Boolean},
+    editing: Boolean
+  },
     {timestamps: true}
 )
 

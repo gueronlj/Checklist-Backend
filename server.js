@@ -23,7 +23,7 @@ app.use('/notes', notesController)
 
 //CONNECTIONS
 mongoose.connect(MONGODB_URI)
-db.on('error', (error) => console.log(error.message + ' is Mongod not running?'));
+db.on('error', (error) => console.log(error.message));
 db.on('connected', () => console.log('mongo connected'));
 db.on('disconnected', () => console.log('mongo disconnected'));
 app.listen(PORT, () => console.log( 'Listening on port:', PORT));

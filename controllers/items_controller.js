@@ -1,7 +1,7 @@
 const express = require('express')
 const checklist = express.Router()
 const Item = require('../Models/item.js')
-const items = require('../Models/seed.js')
+//const items = require('../Models/seed.js')
 
 //--------------Seed---------------------------------
 // checklist.get('/seed', (req, res) => {
@@ -95,7 +95,7 @@ checklist.put('/decrease/:id',(req,res) => {
 checklist.put('/uncheck-all/',(req,res)=>{
    Item.updateMany(
       {},
-      {status:false, quantity: 0},
+      {status:false},
       {multi:true},
       (error, response)=>{
          res.json(response)

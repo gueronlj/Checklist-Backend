@@ -4,7 +4,8 @@ module.exports = [
       status: false,
       quantity: 0,
       recommended: 3,
-      category: 'Protein'
+      tags:['Parishable','Protein','Cold'],
+      unitCost:0
    },
    {
       name: 'Brisket',
@@ -12,6 +13,9 @@ module.exports = [
       quantity: 0,
       recommended: 4,
       category: 'Protein',
+      tags:['Parishable','Protein','Cold'],
+      unitCost:0
+
    },
    {
       name: 'Lettuce',
@@ -19,6 +23,8 @@ module.exports = [
       quantity: 0,
       recommended: 7,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie'],
+      unitCost:0
    },
    {
       name: 'Jalapenos',
@@ -26,6 +32,9 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie'],
+      unitCost:0,
+      unitCost:0
    },
    {
       name: 'Cucumber',
@@ -33,6 +42,8 @@ module.exports = [
       quantity: 0,
       recommended: 5,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie'],
+      unitCost:0
    },
    {
       name: 'White Onions',
@@ -40,6 +51,8 @@ module.exports = [
       quantity: 0,
       recommended: 4,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie'],
+      unitCost:0
    },
    {
       name: 'Purple Cabbage',
@@ -47,6 +60,8 @@ module.exports = [
       quantity: 0,
       recommended: 3,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie'],
+      unitCost:0
    },
    {
       name: 'Cilantro',
@@ -54,6 +69,8 @@ module.exports = [
       quantity: 0,
       recommended: 3,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie'],
+      unitCost:0
    },
    {
       name: 'Green Onions',
@@ -61,13 +78,17 @@ module.exports = [
       quantity: 0,
       recommended: 3,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie'],
+      unitCost:0
    },
    {
-      name: 'Shrimps',
+      name: 'Shrimp',
       status: false,
       quantity: 0,
       recommended: 4,
       category: 'Protein',
+      tags:['Perishable','Frozen','Cold'],
+      unitCost:0
    },
    {
       name: 'Seasoning Mix',
@@ -75,20 +96,35 @@ module.exports = [
       quantity: 0,
       recommended: 2,
       category: 'Misc.',
+      tags:['Perishable','Misc'],
+      unitCost:0
    },
    {
-      name: 'Raddish and Carrot',
+      name: 'Pickled Raddish/Carrot',
       status: false,
       quantity: 0,
       recommended: 2,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie'],
+      unitCost:0
    },
    {
-      name: 'Appetizer Cabbage',
+      name: 'White Cabbage',
       status: false,
       quantity: 0,
       recommended: 2,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie','Appetizer'],
+      unitCost:0
+   },
+   {
+      name: 'Rice',
+      status: false,
+      quantity: 0,
+      recommended: 2,
+      category: 'Veggie',
+      tags:['Parishable','Cold','Warm','Veggie'],
+      unitCost:0
    },
    {
       name: 'Mushrooms',
@@ -96,6 +132,8 @@ module.exports = [
       quantity: 0,
       recommended: 2,
       category: 'Veggie',
+      tags:['Parishable','Cold','Veggie'],
+      unitCost:0
    },
    {
       name: 'Egg Rolls',
@@ -103,6 +141,8 @@ module.exports = [
       quantity: 0,
       recommended: 2,
       category: 'Frozen',
+      tags:['Parishable','Frozen','Appetizer'],
+      unitCost:0
    },
    {
       name: 'Shumai',
@@ -110,6 +150,8 @@ module.exports = [
       quantity: 0,
       recommended: 4,
       category: 'Frozen',
+      tags:['Parishable','Frozen','Appetizer'],
+      unitCost:0
    },
    {
       name: 'Gyoza',
@@ -117,6 +159,17 @@ module.exports = [
       quantity: 0,
       recommended: 4,
       category: 'Frozen',
+      tags:['Parishable','Frozen','Appetizer'],
+      unitCost:0
+   },
+   {
+      name: 'Cheesy Pops',
+      status: false,
+      quantity: 0,
+      recommended: 2,
+      category: 'Veggie',
+      tags:['Parishable','Frozen','Appetizer'],
+      unitCost:0
    },
    {
       name: 'Pho Garnish',
@@ -124,6 +177,8 @@ module.exports = [
       quantity: 0,
       recommended: 20,
       category: 'Misc.',
+      tags:['Parishable','Cold','Pho','Veggie'],
+      unitCost:0
    },
    {
       name: 'Taco Bread',
@@ -131,13 +186,17 @@ module.exports = [
       quantity: 0,
       recommended: 2,
       category: 'Misc.',
+      tags:['Parishable','Frozen','Cold'],
+      unitCost:0
    },
    {
-      name: 'Loco-Loco Bread',
+      name: 'Loco-Loco/3A Bread',
       status: false,
       quantity: 0,
       recommended: 4,
       category: 'Misc.',
+      tags:['Parishable','Cold'],
+      unitCost:0
    },
    {
       name: 'Soda',
@@ -145,13 +204,17 @@ module.exports = [
       quantity: 0,
       recommended: 10,
       category: 'Misc.',
+      tags:['Perishable','Drink'],
+      unitCost:0
    },
    {
-      name: 'Water',
+      name: 'Bottled Water',
       status: false,
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Drink','Perishable'],
+      unitCost:0
    },
    {
       name: 'Butter',
@@ -159,6 +222,8 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Parishable','Cold','Misc'],
+      unitCost:0
    },
    {
       name: 'Pho Noodle',
@@ -166,6 +231,8 @@ module.exports = [
       quantity: 0,
       recommended: 2,
       category: 'Misc.',
+      tags:['Parishable','Cold','Pho'],
+      unitCost:0
    },
    {
       name: 'Tofu',
@@ -173,6 +240,8 @@ module.exports = [
       quantity: 0,
       recommended: 8,
       category: 'Protein',
+      tags:['Parishable','Protein','Cold','Veggie'],
+      unitCost:0
    },
    {
       name: 'Pho Broth',
@@ -180,27 +249,53 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Parishable','Cold','Pho'],
+      unitCost:0
    },
    {
-      name: 'Yum-yum Sauce',
+      name: 'Yum-Yum Sauce',
       status: false,
       quantity: 0,
-      recommended: 5,
+      recommended: 7,
       category: 'Misc.',
+      tags:['Parishable','Sauce'],
+      unitCost:0
    },
    {
-      name: 'Printing Paper',
+      name: 'White Sauce',
+      status: false,
+      quantity: 0,
+      recommended: 3,
+      category: 'Misc.',
+      tags:['Parishable','Sauce'],
+      unitCost:0
+   },
+   {
+      name: 'Green Sauce',
+      status: false,
+      quantity: 0,
+      recommended: 2,
+      category: 'Misc.',
+      tags:['Parishable','Sauce'],
+      unitCost:0
+   },
+   {
+      name: 'Printer Paper',
       status: false,
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Non-parishable','Misc'],
+      unitCost:0
    },
    {
-      name: 'Thank-you Bag',
+      name: 'Thank-you Bags',
       status: false,
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Non-parishable','Misc'],
+      unitCost:0
    },
    {
       name: 'Pho Bowls/Lids',
@@ -208,13 +303,26 @@ module.exports = [
       quantity: 0,
       recommended: 2,
       category: 'Container',
+      tags:['Non-parishable','Container'],
+      unitCost:0
    },
    {
-      name: 'Taco Container',
+      name: 'Sauce Cups/Lids',
+      status: false,
+      quantity: 0,
+      recommended: 1,
+      category: 'Container',
+      tags:['Non-parishable','Container'],
+      unitCost:0
+   },
+   {
+      name: 'Taco Boxes',
       status: false,
       quantity: 0,
       recommended: 2,
       category: 'Container',
+      tags:['Non-parishable','Container'],
+      unitCost:0
    },
    {
       name: 'Hoisin/Sriracha',
@@ -222,6 +330,8 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Parishable','Sauce'],
+      unitCost:0
    },
    {
       name: 'Sweet Chili Sauce',
@@ -229,6 +339,8 @@ module.exports = [
       quantity: 0,
       recommended: 2,
       category: 'Misc.',
+      tags:['Parishable','Sauce'],
+      unitCost:0
    },
    {
       name: 'Unbelievable Bowls/Lids',
@@ -236,6 +348,8 @@ module.exports = [
       quantity: 0,
       recommended: 2,
       category: 'Container',
+      tags:['Non-parishable','Container'],
+      unitCost:0
    },
    {
       name: 'Appetizer Container',
@@ -243,13 +357,17 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Container',
+      tags:['Non-parishable','Container'],
+      unitCost:0
    },
    {
-      name: 'Fries Container/Paper',
+      name: 'Paper boats/Wax paper',
       status: false,
       quantity: 0,
       recommended: 1,
       category: 'Container',
+      tags:['Non-parishable','Container'],
+      unitCost:0
    },
    {
       name: 'Propane',
@@ -257,6 +375,17 @@ module.exports = [
       quantity: 0,
       recommended: 3,
       category: 'Misc.',
+      tags:['Non-parishable','Misc'],
+      unitCost:0
+   },
+   {
+      name: 'Trashcan/Bags',
+      status: false,
+      quantity: 0,
+      recommended: 3,
+      category: 'Misc.',
+      tags:['Non-parishable','Misc'],
+      unitCost:0
    },
    {
       name: 'Terriyaki Sauce',
@@ -264,6 +393,8 @@ module.exports = [
       quantity: 0,
       recommended: 2,
       category: 'Misc.',
+      tags:['Parishable','Sauce'],
+      unitCost:0
    },
    {
       name: 'Oil',
@@ -271,6 +402,8 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Perishable','Misc','Fried'],
+      unitCost:0
    },
    {
       name: 'Water Galon Jug',
@@ -278,13 +411,26 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Non-parishable','Equipment'],
+      unitCost:0
    },
    {
-      name: 'Utensils for Cooking',
+      name: 'Spatulas/Tongs',
       status: false,
       quantity: 0,
       recommended: 4,
       category: 'Misc.',
+      tags:['Non-parishable','Equipment'],
+      unitCost:0
+   },
+   {
+      name: 'Bus Pans/9-Pans',
+      status: false,
+      quantity: 0,
+      recommended: 4,
+      category: 'Misc.',
+      tags:['Non-perishable','Equipment'],
+      unitCost:0
    },
    {
       name: 'Pho Pots/Steamer',
@@ -292,6 +438,8 @@ module.exports = [
       quantity: 0,
       recommended: 4,
       category: 'Misc.',
+      tags:['Non-perishable','Equipment'],
+      unitCost:0
    },
    {
       name: 'Fryer Baskets',
@@ -299,6 +447,8 @@ module.exports = [
       quantity: 0,
       recommended: 4,
       category: 'Misc.',
+      tags:['Non-perishable','Equipment'],
+      unitCost:0
    },
    {
       name: 'Fries',
@@ -306,6 +456,8 @@ module.exports = [
       quantity: 0,
       recommended: 7,
       category: 'Frozen',
+      tags:['Parishable','Frozen','Fried'],
+      unitCost:0
    },
    {
       name: 'Tots',
@@ -313,6 +465,8 @@ module.exports = [
       quantity: 0,
       recommended: 7,
       category: 'Frozen',
+      tags:['Parishable','Frozen','Fried'],
+      unitCost:0
    },
    {
       name: 'Tenders',
@@ -320,6 +474,8 @@ module.exports = [
       quantity: 0,
       recommended: 6,
       category: 'Frozen',
+      tags:['Parishable','Frozen','Fried'],
+      unitCost:0
    },
    {
       name: 'Parmesan',
@@ -327,13 +483,8 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
-   },
-   {
-      name: 'Cajun Seasoning',
-      status: false,
-      quantity: 0,
-      recommended: 1,
-      category: 'Misc.',
+      tags:['Perishable','Cold','Fried'],
+      unitCost:0
    },
    {
       name: 'Gloves',
@@ -341,6 +492,8 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Non-perishable','Equipment'],
+      unitCost:0
    },
    {
       name: 'Plastic Utensils',
@@ -348,6 +501,8 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Misc.',
+      tags:['Non-perishable','Contaier', 'Misc'],
+      unitCost:0
    },
    {
       name: 'Meatballs',
@@ -355,5 +510,7 @@ module.exports = [
       quantity: 0,
       recommended: 1,
       category: 'Protein',
+      tags:['Parishable','Protein','Frozen','Pho'],
+      unitCost:0
    },
 ]
